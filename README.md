@@ -1,6 +1,6 @@
 # eHealth Integration Project
 
-此項目包含將現有診所系統與香港 eHealth (eHRSS) 集成的開發文檔及代碼骨架。
+此項目包含將DR系統與香港 eHealth (eHRSS) 集成的開發文檔及代碼骨架。
 
 ## 核心文件
 - **[eHealth Integration Guide](eHealth_Integration_Guide.md)**: 詳細的開發指南，涵蓋架構、流程及測試步驟。

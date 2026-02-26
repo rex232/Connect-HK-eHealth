@@ -109,7 +109,10 @@ graph LR
 
 ### 5.3 傳輸模塊 (Transport)
 *   **Protocol**: HTTPS (TLS 1.2+).
-*   **SOAP/REST**: 根據 eHealth 接口規範 (通常是 SOAP Web Services 用於舊系統，REST FHIR 用於新系統)。
+*   **SOAP/REST**: 
+    *   目前 eHealth (CMS On-ramp) 主要使用 **SOAP Web Services** 或 **Socket (MLLP)** 進行 HL7/CDA 傳輸。
+    *   雖然 eHealth 官網有提及未來的發展 (eHealth+)，但**目前標準對接規範仍未全面轉向 REST FHIR**。
+    *   **行動**: 請檢查您的 `Self-Service Kit` 中是否有 JSON 格式的範例。如果只有 XML 範例，請務必遵循 XML/CDA 標準開發。
 *   **Retry Logic**: 網絡失敗時的指數退避重試機制。
 
 ## 6. 安全要求 (Security Requirements)
